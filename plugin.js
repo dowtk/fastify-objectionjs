@@ -19,11 +19,6 @@ function fastifyObjectionjs (fastify, options, next) {
     {},
     defaultKnexConfig,
     options.knexConfig,
-    knexSnakeCaseMappers({
-      upperCase: options.upperCase || false,
-      underscoreBeforeDigits: options.underscoreBeforeDigits || false,
-      underscoreBetweenUppercaseLetters: options.underscoreBetweenUppercaseLetters || false
-    })
   )
 
   if (supportedClients.indexOf(knexConfig.client) === -1) {
