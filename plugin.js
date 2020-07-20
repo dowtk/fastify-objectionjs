@@ -2,7 +2,7 @@
 
 const fp = require('fastify-plugin')
 const Knex = require('knex')
-const { Model, knexSnakeCaseMappers } = require('objection')
+const { Model } = require('objection')
 
 const defaultKnexConfig = {
   client: 'sqlite3',
